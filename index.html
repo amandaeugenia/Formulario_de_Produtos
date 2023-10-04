@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="container">
+    <div class="img-form">
+       <img src="img/market_p.png" alt="Produtos" srcset="">
+    </div>  
+    <div class="form">
+            <h1>Cadastro de Produtos</h1> 
+    <div class="input-group">
+        <div id="input-box">
+            <form id="formulario">
+                <label for="nome">Nome do produto:</label>
+                <input type="text" id="nome" size="25" placeholder="Coca-cola, Nestlé, Starbucks..." required><br>
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" size="25" placeholder="Integral, Premium, vegano..." required><br>
+
+                <label for="preco">Valor:</label>
+                <input type="number" id="preco" size="25" placeholder="R$5,00" required><br>
+
+                <label for="disponivel">Disponível para venda:</label>
+                <select id="disponivel">
+
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+                <button type="submit">Cadastrar produto</button>
+            </form>            
+        </div>
+    </div>
+        <div class="list">
+            <h2>Listagem de Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                </div>
+                <tbody id="produtosLista">
+                </tbody>
+            </table>
+    </div>   
+   </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
